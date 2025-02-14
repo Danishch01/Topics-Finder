@@ -18,7 +18,7 @@ max_results = st.slider("Results per Keyword:", min_value=5, max_value=50, value
 
 # List of broader keywords
 keywords = [
-    "Stories"
+    "History"
 ]
 
 # Fetch Data Button
