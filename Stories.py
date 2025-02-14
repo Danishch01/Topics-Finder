@@ -3,7 +3,7 @@ import requests
 from datetime import datetime, timedelta
 
 # YouTube API Key (Store securely in Streamlit secrets)
-API_KEY = st.secrets["AIzaSyApWbeGWPZw8uRygm44cMK7hSXcwCn_rmc"]  
+API_KEY = st.secrets["youtube_api_key"]
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 YOUTUBE_VIDEO_URL = "https://www.googleapis.com/youtube/v3/videos"
 YOUTUBE_CHANNEL_URL = "https://www.googleapis.com/youtube/v3/channels"
