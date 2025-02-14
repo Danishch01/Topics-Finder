@@ -18,7 +18,7 @@ max_results = st.slider("Results per Keyword:", min_value=5, max_value=50, value
 
 # List of broader keywords
 keywords = [
-    "Affair Stories"
+    "Stories"
 ]
 
 # Fetch Data Button
@@ -99,7 +99,7 @@ if st.button("Fetch Data"):
                     view_subs_ratio = (views / subs) if subs > 0 else 0
 
                     # Filter for viral potential
-                    if (subs < 3000 and views >= min_views and engagement_ratio > 0.05 and view_subs_ratio > 100):
+                    if (subs < 5000 and views >= min_views and engagement_ratio > 0.05 and view_subs_ratio > 100):
                         all_results.append({
                             "Title": title,
                             "Description": description,
@@ -125,7 +125,7 @@ if st.button("Fetch Data"):
                 )
                 st.write("---")
         else:
-            st.warning("No results found for channels with fewer than 3,000 subscribers.")
+            st.warning("No results found for channels with fewer than 5,000 subscribers.")
 
     except Exception as e:
         st.error(f"An error occurred: {e}")
